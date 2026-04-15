@@ -9,3 +9,107 @@
 </body>
 </html>
 <a href="about.html">About Us</a>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Tempat Aman</title>
+
+    <style>
+        /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* BACKGROUND */
+        body {
+            height: 100vh;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+
+            /* Animasi fade in saat load */
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* CONTAINER */
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 40px;
+            border-radius: 15px;
+
+            /* efek blur kaca (modern) */
+            backdrop-filter: blur(10px);
+
+            /* animasi naik */
+            transform: translateY(30px);
+            opacity: 0;
+            animation: slideUp 1s ease forwards;
+            animation-delay: 0.5s;
+        }
+
+        /* JUDUL */
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        /* PARAGRAF */
+        p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        /* BUTTON */
+        a {
+            text-decoration: none;
+            background: #ffffff;
+            color: #2575fc;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        /* HOVER EFFECT */
+        a:hover {
+            background: #2575fc;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        /* ANIMASI */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Kamu Tidak Sendiri</h1>
+        <p>
+            Website ini adalah tempat aman untuk kamu yang mengalami bullying.
+            Kamu berharga, dan kamu tidak sendirian.
+        </p>
+
+        <a href="about.html">Tentang Kami</a>
+    </div>
+
+</body>
+</html>
